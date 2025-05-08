@@ -1,0 +1,34 @@
+include <stdio.h>
+
+int main() 
+{
+    char name[50];
+    int phy, chem, maths, bio, sum;
+    float avg, per;
+
+    printf("Enter the name of the student: ");
+    scanf("%s", name);
+
+    printf("Enter marks obtained in Physics: ");
+    scanf("%d", &phy);
+
+    printf("Enter marks obtained in Chemistry: ");
+    scanf("%d", &chem);
+
+    printf("Enter marks obtained in Mathematics: ");
+    scanf("%d", &maths);
+
+    printf("Enter marks obtained in Biology: ");
+    scanf("%d", &bio);
+
+    sum = phy + chem + maths + bio;
+    printf("The total marks obtained in Physics, Chemistry, Mathematics, and Biology are %d\n", sum);
+
+    avg = sum / 4.0;
+    printf("The Average marks are %.2f\n", avg);
+
+    per = (sum / 400.0) * 100;
+    printf("The total Percentage obtained in Physics, Chemistry, Mathematics, and Biology is %.2f%%\n", per);
+
+    return 0;
+}
